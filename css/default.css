@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	color: #000000;
+	font-weight: 400;
+}
+.center{
+	width: 100%;
+	max-width: 800px;
+	margin: 0px auto;
+	background-color: #f2f2f2;
+	
+}
+.header, .content, .price, .form{
+	float: left;
+	width: 100%;
+}
+
+.content .center .wrapper{
+	padding: 30px;
+}
+.content .center p{
+	margin-bottom: 15px;
+}
+.content .center strong{
+	font-weight: 600;
+}
+.content .center .package-consists{
+	
+	
+}
+.content .center .package-consists h3{
+	margin-bottom: 25px;
+}
+.content .center .package-consists h3 span{
+	text-align: center;
+    display: inline-block;
+    background-color: #164b90;
+    color: #fff;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    padding: 8px 25px;
+    margin: 0px auto;
+    z-index: 2;
+    position: relative;
+}
+.content .center .package-consists h3:before,
+.content .center .package-consists h3:after{
+	content: " ";
+    background-color: #0e3466;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    display: inline-block;
+    top: 25px;
+    position: relative;
+    left: 10px;
+}
+.content .center .package-consists h3:after{
+	left: -10px;
+}
+
+.content .mainsec{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+	grid-column-gap: 30px;
+	text-align: center;
+}
+.content .mainsec .card{
+	text-align: center;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.content .mainsec .card img{
+	max-width: 60px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	margin: 5px auto;
+	border: 2px solid #50007e;
+}
+
+.price .center .wrapper{
+	background-color: #164b90;
+	color: #fff;
+}
+
+.price .mainsec{
+	display: table;
+	width: 100%;
+}
+.price .mainsec .card{
+	display: table-cell;
+	vertical-align: top;
+	padding: 10px 30px;
+}
+.price .mainsec .card span{
+	display: table-cell;
+	vertical-align: top;
+	padding: 0 0 0 30px;
+}
+.price .mainsec .card h4{
+	font-size: 21px;
+	line-height: 29px;
+	font-weight: 600;
+}
+.price .mainsec .card h2{
+	font-size: 60px;
+	line-height: 70px;
+	font-weight: 800;
+}
+.price .mainsec .card h3{
+	font-size: 55px;
+	line-height: 60px;
+	font-weight: 700;
+}
+
+.price .mainsec .card h3 code{
+	font-size: 55px;
+	line-height: 60px;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	display: none;
+}
+
+
+.price .mainsec .card h1{
+	font-size: 90px;
+	line-height: 98px;
+	font-weight: 800;
+}
+
+.form .center{
+	padding:50px 0px; 
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 800px) {
+  
+	.price .mainsec{
+		display: block;
+		width: 100%;
+		padding: 10px 0px;
+	}
+	.price .mainsec .card{
+		display:block;
+		padding: 0px 10px;
+		text-align: center !important;
+	}
+
+	.price .mainsec .card span{
+		display: block;
+		padding: 0px;
+	}
+	.price .mainsec .card h3 code{
+		display: inline-block;
+	}
+	.price .mainsec .card h1{
+		display: none;
+	}	
+	.content .center .package-consists h3:before,
+	.content .center .package-consists h3:after{
+		display: none;
+	}
+}
+
+
